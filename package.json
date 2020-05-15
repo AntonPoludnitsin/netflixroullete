@@ -6,6 +6,8 @@
   "scripts": {
     "start": "webpack-dev-server --config webpack.dev.config.js",
     "build": "webpack --config webpack.prod.config.js",
+    "start-env": "webpack-dev-server --env.mode=development",
+    "build-env": "webpack --env.mode=production",
     "test": "jest"
   },
   "keywords": [],
