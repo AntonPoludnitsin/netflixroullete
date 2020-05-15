@@ -1,14 +1,11 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-	mode: 'production',
+	mode: 'development',
 	context: path.join(__dirname, 'src'),
+	devtool: "source-map",
 	entry: './index.js',
-	output: {
-		filename: 'main-[hash:8].js'
-	},
 	resolve: {
 		extensions: ['.js', '.jsx']
 	},
@@ -35,7 +32,7 @@ module.exports = {
 			// Loading css
 			{
 				test: /\.(css)$/,
-				use: [MiniCssExtractPlugin.loader, 'css-loader'],
+				use: ['style-loader', 'css-loader'],
 			},
 		]
 	},
@@ -43,14 +40,10 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			title: 'netflixRoulette',
 			template: '../public/index.html'
-		}),
-		new MiniCssExtractPlugin({
-			filename: 'main-[hash:8].css'
 		})
 	],
 	devServer: {
 		open: true,
 		port: 3000
 	}
-
 };
