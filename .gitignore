@@ -1,2 +1,4 @@
 node_modules/
-# ToDo: добавить в .gitignore папку .idea и dist
+.idea/
+dist/
+
