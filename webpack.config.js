@@ -29,7 +29,7 @@ module.exports = (env) => {
 	return {
 		mode: isProd ? 'production' : isDev && 'development',
 		output: {
-			filename: isProd ? 'main-[hash:8].js' : undefined,
+			filename: isProd && 'main-[hash:8].js',
 		},
 		context: path.join(__dirname, 'src'),
 		devtool: isDev ? "source-map" : "",
