@@ -29,6 +29,7 @@ module.exports = (env) => {
 	return {
 		mode: isProd ? 'production' : isDev && 'development',
 		output: {
+			// ToDo: isProd && 'main-[hash:8].js' почему не так?
 			filename: isProd ? 'main-[hash:8].js' : undefined,
 		},
 		context: path.join(__dirname, 'src'),

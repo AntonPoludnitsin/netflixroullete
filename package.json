@@ -30,6 +30,7 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
+    "@jest/globals": "^26.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-redux": "^7.2.0",
