@@ -29,7 +29,7 @@ module.exports = (env) => {
 	return {
 		mode: isProd ? 'production' : isDev && 'development',
 		output: {
-			filename: isProd && 'main-[hash:8].js',
+			filename: isProd ? 'main-[hash:8].js' : 'main.js',
 		},
 		context: path.join(__dirname, 'src'),
 		devtool: isDev ? "source-map" : "",
@@ -41,18 +41,31 @@ module.exports = (env) => {
 		module: {
 			rules: [
 				{
-					test: /\.js$/,
+					test: /\.jsx?$/,
 					exclude: /node_modules/,
 					loader: 'babel-loader'
 				},
 				//Loading images
 				{
-					test: /\.(png|jpg|jpeg|gif|ico)$/,
+					test: /\.(png|jpg|jpeg|gif|ico|svg)$/,
 					use: [
 						{
 							loader: 'file-loader',
 							options: {
 								outputPath: 'images',
+								name: '[name]-[sha1:hash:7].[ext]'
+							}
+						}
+					]
+				},
+				//Loading fonts
+				{
+					test: /\.ttf$/,
+					use: [
+						{
+							loader: 'file-loader',
+							options: {
+								outputPath: 'fonts',
 								name: '[name]-[sha1:hash:7].[ext]'
 							}
 						}
