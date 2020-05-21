@@ -1,11 +1,11 @@
 import ToggleButtons from "../ToggleButtons";
 import React from "react";
 
-const SortingCount = () => {
+const SortingCount = ({count}) => {
 	return (
 		<>
 			<div className="sorting__count">
-				7 movie found
+				{count} movie found
 			</div>
 			<div className="sorting__toggle">
 				<ToggleButtons title={"Sort by"}

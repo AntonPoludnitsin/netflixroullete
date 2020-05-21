@@ -3,10 +3,10 @@ import '../../style.css';
 import ContentBody from './ContentBody';
 import EmptyContent from './EmptyContent';
 
-const FilmList = (props) => {
+const FilmList = ({films}) => {
 	return (
 		<section className={"filmlist"}>
-			{true && <ContentBody/>}
+			{true && <ContentBody films={films}/>}
 			{false && <EmptyContent/>}
 		</section>
 	)

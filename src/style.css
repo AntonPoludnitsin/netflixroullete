@@ -57,6 +57,9 @@ p {
 .header__logo {
     padding-top: 20px;
     margin-left: 60px;
+    margin-right: 38px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .header__content {
@@ -299,6 +302,9 @@ p {
 }
 
 .film-item__title {
+    width: 230px;
+    display: flex;
+    flex-wrap: wrap;
     font-size: 18px;
     line-height: 22px;
 }
@@ -314,6 +320,12 @@ p {
     justify-content: center;
     align-items: center;
     line-height: 18px;
+}
+
+.film-item__genre {
+    width: 270px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /*--- FOOTER --- */
@@ -339,6 +351,13 @@ p {
 
 .logo__text span {
     font-weight: 800;
+}
+
+/*--- SEARCH-IMAGE-BUTTON ---*/
+
+.search-image {
+    width: 25px;
+    height: 25px;
 }
 
 /*--- EMPTY CONTENT ---*/
