@@ -372,3 +372,15 @@ p {
     line-height: 63px;
     padding: 159px 0 247px;
 }
+
+/*--- ERROR BOUNDARY ---*/
+
+.error {
+    color: gold;
+    display: flex;
+    flex-direction: column;
+    margin: 200px auto;
+    align-items: center;
+    font-size: 25px;
+}
+
