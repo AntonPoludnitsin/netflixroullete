@@ -6,7 +6,6 @@ import FilmList from "./components/ResultBody/FilmList";
 import Footer from "./components/Footer";
 import MovieDescription from "./components/Header/MovieDescription";
 
-
 export class App extends Component {
 	state = {
 		films: [{
@@ -132,7 +131,7 @@ export class App extends Component {
 													year={this.state.films[4].release_date.slice(0, 4)}
 													description={this.state.films[4].overview}
 				/>}
-				<Sorting films={this.state.films}/>
+				<Sorting vcxfilms={this.state.films}/>
 				<FilmList films={this.state.films}/>
 				<Footer/>
 			</div>

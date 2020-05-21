@@ -6,6 +6,5 @@ import ErrorBoundary from "./components/ErrorBoundary/ErrorBoundary";
 
 ReactDOM.render(
 	<ErrorBoundary>
-	<App />
-	</ErrorBoundary>
-	, document.getElementById('root'));
+		<App/>
+	</ErrorBoundary>, document.getElementById('root'));

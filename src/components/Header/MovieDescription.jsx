@@ -38,12 +38,8 @@ const MovieDescription = ({image, title, genres, year, description}) => {
 					<div className="header-movie__description">
 						{description}
 					</div>
-
 				</div>
-
-
 			</div>
-
 		</header>
 	)
 };

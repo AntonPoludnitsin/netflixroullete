@@ -14,8 +14,6 @@ const FilmItem = ({title, year, genres, imageUrl}) => {
 					{genres}
 				</div>
 			</div>
-
-
 		</div>
 	)
 };

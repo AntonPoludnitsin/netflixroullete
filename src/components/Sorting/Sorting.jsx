@@ -1,5 +1,5 @@
 import React from "react";
-import SortingCount from "./SortinCount";
+import SortingCount from "./SortingCount";
 import SortingGenre from "./SortingGenre";
 
 const Sorting = ({films}) => {
