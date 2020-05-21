@@ -131,7 +131,7 @@ export class App extends Component {
 													year={this.state.films[4].release_date.slice(0, 4)}
 													description={this.state.films[4].overview}
 				/>}
-				<Sorting vcxfilms={this.state.films}/>
+				<Sorting films={this.state.films}/>
 				<FilmList films={this.state.films}/>
 				<Footer/>
 			</div>
