@@ -1,5 +1,14 @@
 import React from "react";
 import FilmItem from "./FilmItem";
+import styled from "styled-components";
+
+const FilmListContent = styled.div`
+width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+`;
 
 const ContentBody = ({films}) => {
 	const filmsList = films.map(item => {
@@ -10,9 +19,9 @@ const ContentBody = ({films}) => {
 										 imageUrl={item.poster_path}/>
 	});
 	return (
-		<div className={"filmList__content"}>
+		<FilmListContent>
 			{filmsList}
-		</div>
+		</FilmListContent>
 	)
 };
 

@@ -1,14 +1,19 @@
 import React from 'react';
-import '../../style.css';
 import ContentBody from './ContentBody';
 import EmptyContent from './EmptyContent';
+import styled from "styled-components";
+
+const MovieLists = styled.section`
+	background-color: #232323;
+    padding: 72px 60px 20px;
+	`;
 
 const FilmList = ({films}) => {
 	return (
-		<section className={"filmlist"}>
+		<MovieLists>
 			{true && <ContentBody films={films}/>}
 			{false && <EmptyContent/>}
-		</section>
+		</MovieLists>
 	)
 };
 

@@ -1,5 +1,4 @@
 import React from 'react';
-import '../style.css'
 import Logo from "./Header/Logo";
 import styled from "styled-components";
 
