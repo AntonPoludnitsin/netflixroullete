@@ -2,6 +2,13 @@ import React from 'react';
 import '../../style.css';
 import Logo from "./Logo";
 import Icon from '../../images/red-icon.png';
+import styled from "styled-components";
+
+const SearchImage = styled.img`
+	width: 25px;
+	height: 25px;
+	`;
+
 
 const MovieDescription = ({image, title, genres, year, description}) => {
 	return (
@@ -9,7 +16,7 @@ const MovieDescription = ({image, title, genres, year, description}) => {
 			<div className="header__logo">
 				<Logo/>
 				<a href="">
-					<img src={Icon} alt="search link" className="search-image"/>
+					<SearchImage src={Icon} alt="search link" className="search-image"/>
 				</a>
 			</div>
 			<div className="header-movie">

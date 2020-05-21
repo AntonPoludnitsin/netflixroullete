@@ -1,4 +1,14 @@
 import React, {Component} from 'react';
+import styled from "styled-components";
+
+const Error = styled.div`
+   color: gold;
+    display: flex;
+    flex-direction: column;
+    margin: 200px auto;
+    align-items: center;
+    font-size: 25px;
+`;
 
 class ErrorBoundary extends Component {
 	state = {
@@ -11,14 +21,14 @@ class ErrorBoundary extends Component {
 
 	render() {
 		if (this.state.hasError) {
-			return <div className={"error"}>
-				<span >
+			return <Error>
+				<span>
 					Something has gone terribly wrong
 				</span>
-				<span >
+				<span>
 					(but we already going to fix it)
 				</span>
-			</div>
+			</Error>
 		}
 		return this.props.children;
 	}

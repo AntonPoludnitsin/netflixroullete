@@ -196,17 +196,6 @@ p {
 
 /*--- TOGGLEBUTTON COMPONENT --- */
 
-.toggle__title {
-    margin: 0;
-    font-weight: 500;
-    font-size: 16px;
-    letter-spacing: 0.89px;
-    line-height: 19px;
-    text-transform: uppercase;
-    opacity: 0.8;
-    margin-right: 20px;
-}
-
 .toggle__button {
     background-color: #424242;
     opacity: 0.7;
@@ -327,60 +316,3 @@ p {
     display: flex;
     flex-wrap: wrap;
 }
-
-/*--- FOOTER --- */
-
-.footer {
-    background-color: #424242;
-    height: 70px;
-    margin-bottom: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/*--- LOGO-COMPONENT --- */
-
-.logo__text {
-    color: #F65261;
-    font-size: 20px;
-    font-weight: 500;
-    letter-spacing: 0;
-    line-height: 24px;
-}
-
-.logo__text span {
-    font-weight: 800;
-}
-
-/*--- SEARCH-IMAGE-BUTTON ---*/
-
-.search-image {
-    width: 25px;
-    height: 25px;
-}
-
-/*--- EMPTY CONTENT ---*/
-
-.empty-content {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    opacity: 0.8;
-    font-size: 52px;
-    letter-spacing: 0;
-    line-height: 63px;
-    padding: 159px 0 247px;
-}
-
-/*--- ERROR BOUNDARY ---*/
-
-.error {
-    color: gold;
-    display: flex;
-    flex-direction: column;
-    margin: 200px auto;
-    align-items: center;
-    font-size: 25px;
-}
-
