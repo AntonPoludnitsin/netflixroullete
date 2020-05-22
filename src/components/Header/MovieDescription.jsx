@@ -5,6 +5,14 @@ import '../../style.css';
 import Logo from "./Logo";
 import Icon from '../../images/red-icon.png';
 
+
+const HeaderLogo = styled.div`
+	padding-top: 20px;
+  margin-left: 60px;
+  margin-right: 38px;
+  display: flex;
+  justify-content: space-between;
+`;
 const SearchImage = styled.img`
 	width: 25px;
 	height: 25px;
@@ -78,12 +86,12 @@ const MovieOverview = styled.div`
 const MovieDescription = ({image, title, genres, year, description}) => {
 	return (
 		<header className="header">
-			<div className="header__logo">
+			<HeaderLogo>
 				<Logo/>
 				<a href="">
 					<SearchImage src={Icon} alt="search link"/>
 				</a>
-			</div>
+			</HeaderLogo>
 			<HeaderMovie>
 				<MovieImage src={image} alt="poster of movie"
 				/>
