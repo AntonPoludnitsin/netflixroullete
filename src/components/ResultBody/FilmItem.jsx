@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
 
-
 const MovieItem = styled.div`
 	color: #FFFFFF;
   font-family: 'Montserrat', sans-serif;

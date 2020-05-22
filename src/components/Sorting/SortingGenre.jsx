@@ -1,12 +1,22 @@
 import React from 'react';
+import styled from "styled-components";
+
+const SortGenre = styled.div`
+	display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 0;
+  line-height: 19px;
+`;
 
 const SortingGenre = () => {
-	return(
-		<>
-			<div className="sorting__genre">
-				Films by Drama genre
-			</div>
-		</>
+	return (
+		<SortGenre>
+			Films by Drama genre
+		</SortGenre>
 	)
 };
+
 export default SortingGenre;

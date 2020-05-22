@@ -1,17 +1,33 @@
-import ToggleButtons from "../ToggleButtons";
 import React from "react";
+import ToggleButtons from "../ToggleButtons";
+import styled from "styled-components";
+
+const SortCount = styled.div`
+	display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 0;
+  line-height: 19px;
+`;
+
+const SortingToggle = styled.div`
+	display: flex;
+  align-items: center;
+`;
 
 const SortingCount = ({count}) => {
 	return (
 		<>
-			<div className="sorting__count">
+			<SortCount>
 				{count} movie found
-			</div>
-			<div className="sorting__toggle">
+			</SortCount>
+			<SortingToggle>
 				<ToggleButtons title={"Sort by"}
 											 leftButton={"Release date"}
 											 rightButton={"Rating"}/>
-			</div>
+			</SortingToggle>
 		</>
 	)
 };

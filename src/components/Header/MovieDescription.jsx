@@ -1,14 +1,79 @@
 import React from 'react';
+import styled from "styled-components";
+
 import '../../style.css';
 import Logo from "./Logo";
 import Icon from '../../images/red-icon.png';
-import styled from "styled-components";
 
 const SearchImage = styled.img`
 	width: 25px;
 	height: 25px;
-	`;
+`;
+const HeaderMovie = styled.div`
+	margin: 37px 60px 0 60px;
+  display: flex;
+`;
+const MovieImage = styled.img`
+	width: 279px;
+  height: 394px;
+  background-color: #f65261;
+  margin-right: 60px;
+  margin-bottom: 70px;
+`;
 
+const AboutMovie = styled.div`
+	margin-top: 29px;
+  display: flex;
+  flex-direction: column;
+  width: 672px;
+  margin-bottom: 130px;
+`;
+const MovieTop = styled.div`
+	display: flex;
+  margin-bottom: 5px;
+  opacity: 0.8;
+`;
+const MovieTitle = styled.h2`
+	font-weight: 400;
+  font-size: 52px;
+  line-height: 63px;
+  margin: 0 17px 0 0;
+`;
+const MovieRating = styled.div`
+	width: 67px;
+  height: 67px;
+  color: #A1E66F;
+  font-size: 26px;
+  line-height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #FFFFFF;
+  border-radius: 50%;
+`;
+const MovieGenre = styled.div`
+	opacity: 0.7;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  margin-bottom: 28px;
+`;
+const MovieMiddle = styled.div`
+	display: flex;
+  color: #f65261;
+  font-size: 26px;
+  line-height: 32px;
+`;
+const MovieYear = styled.div`
+	margin-right: 30px;
+`;
+const MovieOverview = styled.div`
+	margin-top: 23px;
+  opacity: 0.8;
+  font-family: "Open Sans";
+  font-size: 17px;
+  line-height: 22px;
+`;
 
 const MovieDescription = ({image, title, genres, year, description}) => {
 	return (
@@ -16,37 +81,37 @@ const MovieDescription = ({image, title, genres, year, description}) => {
 			<div className="header__logo">
 				<Logo/>
 				<a href="">
-					<SearchImage src={Icon} alt="search link" className="search-image"/>
+					<SearchImage src={Icon} alt="search link"/>
 				</a>
 			</div>
-			<div className="header-movie">
-				<img src={image} alt="poster of movie"
-						 className="header-movie__image">
-				</img>
-				<div className="header-movie__about">
-					<div className="header-movie__top">
-						<h2 className="header-movie__title">
+			<HeaderMovie>
+				<MovieImage src={image} alt="poster of movie"
+				/>
+				<AboutMovie>
+					<MovieTop>
+						<MovieTitle>
 							{title}
-						</h2>
-						<div className="header-movie__rating">
+						</MovieTitle>
+						<MovieRating>
 							4.3
-						</div>
-					</div>
-					<div className="header-movie__genre">
+						</MovieRating>
+					</MovieTop>
+					<MovieGenre>
 						{genres}
-					</div>
-					<div className={"header-movie__middle"}>
-						<div
-							className="header-movie__year">
+					</MovieGenre>
+					<MovieMiddle>
+						<MovieYear>
 							{year}
+						</MovieYear>
+						<div>
+							154 min
 						</div>
-						<div className="header-movie__duration">154 min</div>
-					</div>
-					<div className="header-movie__description">
+					</MovieMiddle>
+					<MovieOverview>
 						{description}
-					</div>
-				</div>
-			</div>
+					</MovieOverview>
+				</AboutMovie>
+			</HeaderMovie>
 		</header>
 	)
 };

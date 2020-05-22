@@ -1,13 +1,14 @@
 import React from "react";
-import FilmItem from "./FilmItem";
 import styled from "styled-components";
 
+import FilmItem from "./FilmItem";
+
 const FilmListContent = styled.div`
-width: 100%;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+	width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 `;
 
 const ContentBody = ({films}) => {
