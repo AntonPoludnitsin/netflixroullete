@@ -13,11 +13,11 @@ const FooterContent = styled.footer`
 `;
 
 const Footer = () => {
-	return (
-		<FooterContent>
-			<Logo/>
-		</FooterContent>
-	);
+  return (
+    <FooterContent>
+      <Logo/>
+    </FooterContent>
+  );
 };
 
 export default Footer;
