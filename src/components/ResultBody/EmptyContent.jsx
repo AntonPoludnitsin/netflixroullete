@@ -2,7 +2,7 @@ import React from 'react';
 import styled from "styled-components";
 
 const WithoutContent = styled.div`
-	 display: flex;
+   display: flex;
    justify-content: center;
    align-content: center;
    opacity: 0.8;
@@ -13,11 +13,11 @@ const WithoutContent = styled.div`
 `;
 
 const EmptyContent = () => {
-	return (
-		<WithoutContent>
-			No films found
-		</WithoutContent>
-	)
+   return (
+      <WithoutContent>
+         No films found
+      </WithoutContent>
+   )
 };
 
 export default EmptyContent;

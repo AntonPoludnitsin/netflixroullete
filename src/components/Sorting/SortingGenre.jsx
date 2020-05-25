@@ -12,11 +12,11 @@ const SortGenre = styled.div`
 `;
 
 const SortingGenre = () => {
-	return (
-		<SortGenre>
-			Films by Drama genre
-		</SortGenre>
-	)
+  return (
+    <SortGenre>
+      Films by Drama genre
+    </SortGenre>
+  )
 };
 
 export default SortingGenre;

@@ -2,12 +2,12 @@ import React, {Component} from 'react';
 import styled from "styled-components";
 
 const Error = styled.div`
-   color: gold;
-    display: flex;
-    flex-direction: column;
-    margin: 200px auto;
-    align-items: center;
-    font-size: 25px;
+	color: gold;
+  display: flex;
+  flex-direction: column;
+  margin: 200px auto;
+  align-items: center;
+  font-size: 25px;
 `;
 
 class ErrorBoundary extends Component {

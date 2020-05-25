@@ -3,11 +3,11 @@ import styled from "styled-components";
 
 const TextLogo = styled.p`
 	color: #F65261;
-   font-size: 20px;
-   font-weight: 500;
-   letter-spacing: 0;
-   line-height: 24px;
-	`;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0;
+	line-height: 24px;
+`;
 
 const Span = styled.span`
 	font-weight: 800;
