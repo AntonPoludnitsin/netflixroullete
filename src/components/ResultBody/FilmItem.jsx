@@ -55,10 +55,10 @@ const Genres = styled.div`
   flex-wrap: wrap;
 `;
 
-const FilmItem = ({title, year, genres, imageUrl}) => {
+const FilmItem = ({ title, year, genres, imageUrl }) => {
   return (
     <MovieItem>
-      <MovieImage src={imageUrl} alt={'Poster of movie'}/>
+      <MovieImage src={imageUrl} alt={'Poster of movie'} />
       <AboutMovie>
         <Description>
           <Title>{title}</Title>

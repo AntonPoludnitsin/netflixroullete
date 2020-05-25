@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import styled from 'styled-components';
 
 import Header from './components/Header/Header';
@@ -116,7 +116,7 @@ export class App extends Component {
   render() {
     return (
       <Main>
-        {true && <Header/>}
+        {true && <Header />}
         {false && (
           <MovieDescription
             image={this.state.films[4].poster_path}
@@ -126,9 +126,9 @@ export class App extends Component {
             description={this.state.films[4].overview}
           />
         )}
-        <Sorting films={this.state.films}/>
-        <FilmList films={this.state.films}/>
-        <Footer/>
+        <Sorting films={this.state.films} />
+        <FilmList films={this.state.films} />
+        <Footer />
       </Main>
     );
   }

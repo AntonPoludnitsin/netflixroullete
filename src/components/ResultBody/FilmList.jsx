@@ -9,11 +9,11 @@ const MoviesList = styled.section`
   padding: 72px 60px 20px;
 `;
 
-const FilmList = ({films}) => {
+const FilmList = ({ films }) => {
   return (
     <MoviesList>
-      {true && <ContentBody films={films}/>}
-      {false && <EmptyContent/>}
+      {true && <ContentBody films={films} />}
+      {false && <EmptyContent />}
     </MoviesList>
   );
 };

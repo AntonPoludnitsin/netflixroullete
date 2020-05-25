@@ -13,7 +13,7 @@ const ToggleTitle = styled.p`
   margin-right: 20px;
 `;
 
-const ToggleButtons = ({title, leftButton, rightButton}) => {
+const ToggleButtons = ({ title, leftButton, rightButton }) => {
   return (
     <>
       <ToggleTitle>{title}</ToggleTitle>

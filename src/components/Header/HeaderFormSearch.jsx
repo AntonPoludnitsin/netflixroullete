@@ -11,7 +11,7 @@ const HeaderForm = styled.form`
 const HeaderFormSearch = () => {
   return (
     <HeaderForm action="">
-      <input type="text" className="form-search__input" placeholder="Search"/>
+      <input type="text" className="form-search__input" placeholder="Search" />
       <button type="submit" className="button form-search__button">
         Search
       </button>

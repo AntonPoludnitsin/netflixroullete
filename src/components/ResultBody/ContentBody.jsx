@@ -11,7 +11,7 @@ const FilmListContent = styled.div`
   justify-content: space-between;
 `;
 
-const ContentBody = ({films}) => {
+const ContentBody = ({ films }) => {
   const filmsList = films.map((item) => {
     return (
       <FilmItem

@@ -16,12 +16,12 @@ const SortingContent = styled.div`
   justify-content: space-between;
 `;
 
-const Sorting = ({films}) => {
+const Sorting = ({ films }) => {
   return (
     <SectionSorting>
       <SortingContent>
-        {true && <SortingCount count={films.length}/>}
-        {false && <SortingGenre/>}
+        {true && <SortingCount count={films.length} />}
+        {false && <SortingGenre />}
       </SortingContent>
     </SectionSorting>
   );

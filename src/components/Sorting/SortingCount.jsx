@@ -17,7 +17,7 @@ const SortingToggle = styled.div`
   align-items: center;
 `;
 
-const SortingCount = ({count}) => {
+const SortingCount = ({ count }) => {
   return (
     <>
       <SortCount>{count} movie found</SortCount>

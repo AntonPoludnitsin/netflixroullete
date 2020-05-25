@@ -82,17 +82,17 @@ const MovieOverview = styled.div`
   line-height: 22px;
 `;
 
-const MovieDescription = ({image, title, genres, year, description}) => {
+const MovieDescription = ({ image, title, genres, year, description }) => {
   return (
     <header className="header">
       <HeaderLogo>
-        <Logo/>
+        <Logo />
         <a href="">
-          <SearchImage src={Icon} alt="search link"/>
+          <SearchImage src={Icon} alt="search link" />
         </a>
       </HeaderLogo>
       <HeaderMovie>
-        <MovieImage src={image} alt="poster of movie"/>
+        <MovieImage src={image} alt="poster of movie" />
         <AboutMovie>
           <MovieTop>
             <MovieTitle>{title}</MovieTitle>

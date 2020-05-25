@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import styled from 'styled-components';
 
 import ToggleButtons from '../ToggleButtons';
@@ -40,12 +40,12 @@ class Header extends Component {
     return (
       <header className="header">
         <HeaderLogo>
-          <Logo/>
+          <Logo />
         </HeaderLogo>
         <HeaderContent>
           <h1 className="visually-hidden">Welcome to the netflixRoulette!</h1>
           <HeaderTitle>Find your movie</HeaderTitle>
-          <HeaderFormSearch/>
+          <HeaderFormSearch />
           <HeaderToggle>
             <ToggleButtons
               title={'Search by'}

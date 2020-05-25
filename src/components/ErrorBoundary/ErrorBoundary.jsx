@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import styled from 'styled-components';
 
 const Error = styled.div`
@@ -16,7 +16,7 @@ class ErrorBoundary extends Component {
   };
 
   componentDidCatch() {
-    this.setState({hasError: true});
+    this.setState({ hasError: true });
   }
 
   render() {

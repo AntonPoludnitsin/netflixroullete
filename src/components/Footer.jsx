@@ -15,7 +15,7 @@ const FooterContent = styled.footer`
 const Footer = () => {
   return (
     <FooterContent>
-      <Logo/>
+      <Logo />
     </FooterContent>
   );
 };
