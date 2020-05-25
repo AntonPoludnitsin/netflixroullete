@@ -1,13 +1,20 @@
-import { describe } from "@jest/globals"; //ToDo!
+import {describe} from "@jest/globals"; //ToDo!
+import {sum} from '../src/components/Sum';
 
 describe("Filter function", () => {
-	test("it should filter by a search term (link)", () => {
-		const input = [
-			{ id: 1, url: "https://www.url1.dev" },
-			{ id: 2, url: "https://www.url2.dev" },
-			{ id: 46, url: "https://www.lik3.dev" }
-		];
-
-		//ToDo: а где собственно тест?
+	test('adds 1 + 2 to equal 3', () => {
+		expect(sum(1, 2)).toBe(3);
 	});
-});
+	test('adds 2 + 2 to equal 4', () => {
+		expect(sum(2, 2)).toBe(4);
+	});
+	test('adds 1 + 2 to equal 3', () => {
+		expect(sum(4, 2)).toBe(6);
+	});
+	test('adds 1 + 2 to equal 3', () => {
+		expect(sum(10, 2)).toBe(12);
+	});
+
+
+})
+;

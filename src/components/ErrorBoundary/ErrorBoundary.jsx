@@ -11,27 +11,27 @@ const Error = styled.div`
 `;
 
 class ErrorBoundary extends Component {
-	state = {
-		hasError: false
-	};
+  state = {
+    hasError: false
+  };
 
-	componentDidCatch() {
-		this.setState({hasError: true})
-	}
+  componentDidCatch() {
+    this.setState({hasError: true})
+  }
 
-	render() {
-		if (this.state.hasError) {
-			return <Error>
+  render() {
+    if (this.state.hasError) {
+      return <Error>
 				<span>
 					Something has gone terribly wrong
 				</span>
-				<span>
+        <span>
 					(but we already going to fix it)
 				</span>
-			</Error>
-		}
-		return this.props.children;
-	}
+      </Error>
+    }
+    return this.props.children;
+  }
 }
 
 export default ErrorBoundary;
