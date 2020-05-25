@@ -22,8 +22,11 @@ const SortingCount = ({count}) => {
     <>
       <SortCount>{count} movie found</SortCount>
       <SortingToggle>
-        <ToggleButtons title={'Sort by'} leftButton={'Release date'}
-                       rightButton={'Rating'}/>
+        <ToggleButtons
+          title={'Sort by'}
+          leftButton={'Release date'}
+          rightButton={'Rating'}
+        />
       </SortingToggle>
     </>
   );

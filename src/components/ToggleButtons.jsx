@@ -17,8 +17,9 @@ const ToggleButtons = ({title, leftButton, rightButton}) => {
   return (
     <>
       <ToggleTitle>{title}</ToggleTitle>
-      <button
-        className={`button toggle__button toggle-active`}>{leftButton}</button>
+      <button className={`button toggle__button toggle-active`}>
+        {leftButton}
+      </button>
       <button className={`button toggle__button`}>{rightButton}</button>
     </>
   );

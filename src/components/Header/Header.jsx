@@ -47,8 +47,11 @@ class Header extends Component {
           <HeaderTitle>Find your movie</HeaderTitle>
           <HeaderFormSearch/>
           <HeaderToggle>
-            <ToggleButtons title={'Search by'} leftButton={'title'}
-                           rightButton={'genre'}/>
+            <ToggleButtons
+              title={'Search by'}
+              leftButton={'title'}
+              rightButton={'genre'}
+            />
           </HeaderToggle>
         </HeaderContent>
       </header>
