@@ -6,20 +6,20 @@ import Logo from "./Logo";
 import HeaderFormSearch from "./HeaderFormSearch";
 
 const HeaderLogo = styled.div`
-	padding-top: 20px;
+  padding-top: 20px;
   margin-left: 60px;
   margin-right: 38px;
   display: flex;
   justify-content: space-between;
 `;
 const HeaderContent = styled.div`
-	width: 960px;
+  width: 960px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
 `;
 const HeaderTitle = styled.h2`
-	color: white;
+  color: white;
   line-height: 49px;
   font-size: 40px;
   font-weight: 300;
@@ -29,7 +29,7 @@ const HeaderTitle = styled.h2`
   text-transform: uppercase;
 `;
 const HeaderToggle = styled.div`
-	margin-top: 13px;
+  margin-top: 13px;
   margin-bottom: 103px;
   display: flex;
   align-items: baseline;

@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import styled from "styled-components";
 
 const Error = styled.div`
-	color: gold;
+  color: gold;
   display: flex;
   flex-direction: column;
   margin: 200px auto;
@@ -22,12 +22,12 @@ class ErrorBoundary extends Component {
   render() {
     if (this.state.hasError) {
       return <Error>
-				<span>
-					Something has gone terribly wrong
-				</span>
         <span>
-					(but we already going to fix it)
-				</span>
+          Something has gone terribly wrong
+        </span>
+        <span>
+          (but we already going to fix it)
+        </span>
       </Error>
     }
     return this.props.children;

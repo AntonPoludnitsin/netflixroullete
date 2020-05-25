@@ -4,7 +4,7 @@ import styled from "styled-components";
 import Logo from "./Header/Logo";
 
 const FooterContent = styled.footer`
-	background-color: #424242;
+  background-color: #424242;
   height: 70px;
   margin-bottom: 70px;
   display: flex;

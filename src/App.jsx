@@ -8,7 +8,7 @@ import Footer from "./components/Footer";
 import MovieDescription from "./components/Header/MovieDescription";
 
 const Main = styled.main`
-	width: 1200px;
+  width: 1200px;
   margin: 54px auto 0;
   color: white;
   box-shadow: 0 2px 34px 0 rgba(0, 0, 0, 0.27);

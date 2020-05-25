@@ -3,7 +3,7 @@ import styled from "styled-components";
 import '../../style.css'
 
 const HeaderForm = styled.form`
-	height: 57px;
+  height: 57px;
   display: flex;
   justify-content: space-between;
 `;
