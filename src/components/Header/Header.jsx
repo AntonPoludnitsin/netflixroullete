@@ -1,9 +1,9 @@
-import React, {Component} from "react";
-import styled from "styled-components";
+import React, {Component} from 'react';
+import styled from 'styled-components';
 
-import ToggleButtons from "../ToggleButtons";
-import Logo from "./Logo";
-import HeaderFormSearch from "./HeaderFormSearch";
+import ToggleButtons from '../ToggleButtons';
+import Logo from './Logo';
+import HeaderFormSearch from './HeaderFormSearch';
 
 const HeaderLogo = styled.div`
   padding-top: 20px;
@@ -47,16 +47,13 @@ class Header extends Component {
           <HeaderTitle>Find your movie</HeaderTitle>
           <HeaderFormSearch/>
           <HeaderToggle>
-            <ToggleButtons title={"Search by"}
-                           leftButton={"title"}
-                           rightButton={"genre"}/>
+            <ToggleButtons title={'Search by'} leftButton={'title'}
+                           rightButton={'genre'}/>
           </HeaderToggle>
-
         </HeaderContent>
       </header>
-    )
+    );
   }
 }
 
 export default Header;
-

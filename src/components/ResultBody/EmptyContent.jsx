@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const WithoutContent = styled.div`
   display: flex;
@@ -13,11 +13,7 @@ const WithoutContent = styled.div`
 `;
 
 const EmptyContent = () => {
-  return (
-    <WithoutContent>
-      No films found
-    </WithoutContent>
-  )
+  return <WithoutContent>No films found</WithoutContent>;
 };
 
 export default EmptyContent;

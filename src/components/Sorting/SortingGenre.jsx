@@ -1,10 +1,10 @@
 import React from 'react';
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const SortGenre = styled.div`
-	display: flex;
+  display: flex;
   align-items: center;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 16px;
   font-weight: 800;
   letter-spacing: 0;
@@ -12,11 +12,7 @@ const SortGenre = styled.div`
 `;
 
 const SortingGenre = () => {
-  return (
-    <SortGenre>
-      Films by Drama genre
-    </SortGenre>
-  )
+  return <SortGenre>Films by Drama genre</SortGenre>;
 };
 
 export default SortingGenre;

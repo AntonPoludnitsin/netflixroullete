@@ -1,23 +1,25 @@
 import React from 'react';
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const TextLogo = styled.p`
-	color: #F65261;
+  color: #f65261;
   font-size: 20px;
   font-weight: 500;
   letter-spacing: 0;
-	line-height: 24px;
+  line-height: 24px;
 `;
 
 const Span = styled.span`
-	font-weight: 800;
+  font-weight: 800;
 `;
 
 const Logo = () => {
-	return (
-		<>
-			<TextLogo className="logo__text"><Span>netflix</Span>roulette</TextLogo>
-		</>
-	)
+  return (
+    <>
+      <TextLogo className="logo__text">
+        <Span>netflix</Span>roulette
+      </TextLogo>
+    </>
+  );
 };
 export default Logo;

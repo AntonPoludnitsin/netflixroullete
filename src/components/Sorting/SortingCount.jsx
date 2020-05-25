@@ -1,11 +1,11 @@
-import React from "react";
-import ToggleButtons from "../ToggleButtons";
-import styled from "styled-components";
+import React from 'react';
+import ToggleButtons from '../ToggleButtons';
+import styled from 'styled-components';
 
 const SortCount = styled.div`
-	display: flex;
+  display: flex;
   align-items: center;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 16px;
   font-weight: 800;
   letter-spacing: 0;
@@ -13,22 +13,19 @@ const SortCount = styled.div`
 `;
 
 const SortingToggle = styled.div`
-	display: flex;
+  display: flex;
   align-items: center;
 `;
 
 const SortingCount = ({count}) => {
-	return (
-		<>
-			<SortCount>
-				{count} movie found
-			</SortCount>
-			<SortingToggle>
-				<ToggleButtons title={"Sort by"}
-											 leftButton={"Release date"}
-											 rightButton={"Rating"}/>
-			</SortingToggle>
-		</>
-	)
+  return (
+    <>
+      <SortCount>{count} movie found</SortCount>
+      <SortingToggle>
+        <ToggleButtons title={'Sort by'} leftButton={'Release date'}
+                       rightButton={'Rating'}/>
+      </SortingToggle>
+    </>
+  );
 };
 export default SortingCount;
