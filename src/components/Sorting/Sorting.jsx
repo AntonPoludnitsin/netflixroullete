@@ -20,8 +20,8 @@ const Sorting = ({ films }) => {
   return (
     <SectionSorting>
       <SortingContent>
-        {true && <SortingCount count={films.length} />}
-        {false && <SortingGenre />}
+        {films && <SortingCount count={films.length} />}
+        {!films && <SortingGenre />}
       </SortingContent>
     </SectionSorting>
   );

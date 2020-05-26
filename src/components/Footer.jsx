@@ -12,12 +12,10 @@ const FooterContent = styled.footer`
   align-items: center;
 `;
 
-const Footer = () => {
-  return (
-    <FooterContent>
-      <Logo />
-    </FooterContent>
-  );
-};
+const Footer = () => (
+  <FooterContent>
+    <Logo />
+  </FooterContent>
+);
 
 export default Footer;

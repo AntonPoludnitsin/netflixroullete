@@ -12,8 +12,8 @@ const MoviesList = styled.section`
 const FilmList = ({ films }) => {
   return (
     <MoviesList>
-      {true && <ContentBody films={films} />}
-      {false && <EmptyContent />}
+      {films && <ContentBody films={films} />}
+      {!films && <EmptyContent />}
     </MoviesList>
   );
 };

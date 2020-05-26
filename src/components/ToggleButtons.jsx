@@ -13,16 +13,14 @@ const ToggleTitle = styled.p`
   margin-right: 20px;
 `;
 
-const ToggleButtons = ({ title, leftButton, rightButton }) => {
-  return (
-    <>
-      <ToggleTitle>{title}</ToggleTitle>
-      <button className={`button toggle__button toggle-active`}>
-        {leftButton}
-      </button>
-      <button className={`button toggle__button`}>{rightButton}</button>
-    </>
-  );
-};
+const ToggleButtons = ({ title, leftButton, rightButton }) => (
+  <>
+    <ToggleTitle>{title}</ToggleTitle>
+    <button className="button toggle__button toggle-active">
+      {leftButton}
+    </button>
+    <button className="button toggle__button">{rightButton}</button>
+  </>
+);
 
 export default ToggleButtons;

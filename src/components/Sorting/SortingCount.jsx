@@ -17,18 +17,17 @@ const SortingToggle = styled.div`
   align-items: center;
 `;
 
-const SortingCount = ({ count }) => {
-  return (
-    <>
-      <SortCount>{count} movie found</SortCount>
-      <SortingToggle>
-        <ToggleButtons
-          title={'Sort by'}
-          leftButton={'Release date'}
-          rightButton={'Rating'}
-        />
-      </SortingToggle>
-    </>
-  );
-};
+const SortingCount = ({ count }) => (
+  <>
+    <SortCount>{count} movie found</SortCount>
+    <SortingToggle>
+      <ToggleButtons
+        title='Sort by'
+        leftButton='Release date'
+        rightButton='Rating'
+      />
+    </SortingToggle>
+  </>
+);
+
 export default SortingCount;

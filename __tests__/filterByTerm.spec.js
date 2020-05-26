@@ -1,5 +1,8 @@
 import {describe} from "@jest/globals"; //ToDo!
-import {sum} from '../src/components/Sum';
+
+export function sum(a, b) {
+	return a + b;
+}
 
 describe("Filter function", () => {
 	test('adds 1 + 2 to equal 3', () => {
@@ -14,7 +17,5 @@ describe("Filter function", () => {
 	test('adds 1 + 2 to equal 3', () => {
 		expect(sum(10, 2)).toBe(12);
 	});
-
-
 })
 ;
