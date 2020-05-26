@@ -1,9 +1,12 @@
 import React from 'react';
 
-import { HeaderLogo } from './Styles/HeaderStyles';
-import { HeaderContent } from './Styles/HeaderStyles';
-import { HeaderTitle } from './Styles/HeaderStyles';
-import { HeaderToggle } from './Styles/HeaderStyles';
+import {
+  HeaderLogo,
+  HeaderContent,
+  HeaderTitle,
+  HeaderToggle,
+} from './Styles/HeaderStyles';
+
 import '../../style.css';
 import ToggleButtons from '../ToggleButtons';
 import Logo from './Logo';
@@ -20,9 +23,9 @@ const Header = () => (
       <HeaderFormSearch />
       <HeaderToggle>
         <ToggleButtons
-          title='Search by'
-          leftButton='title'
-          rightButton='genre'
+          title="Search by"
+          leftButton="title"
+          rightButton="genre"
         />
       </HeaderToggle>
     </HeaderContent>

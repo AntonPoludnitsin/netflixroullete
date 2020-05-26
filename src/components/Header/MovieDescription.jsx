@@ -1,17 +1,19 @@
 import React from 'react';
 
-import { HeaderLogo } from './Styles/DescriptionStyles';
-import { SearchImage } from './Styles/DescriptionStyles';
-import { HeaderMovie } from './Styles/DescriptionStyles';
-import { MovieImage } from './Styles/DescriptionStyles';
-import { AboutMovie } from './Styles/DescriptionStyles';
-import { MovieTop } from './Styles/DescriptionStyles';
-import { MovieTitle } from './Styles/DescriptionStyles';
-import { MovieRating } from './Styles/DescriptionStyles';
-import { MovieGenre } from './Styles/DescriptionStyles';
-import { MovieMiddle } from './Styles/DescriptionStyles';
-import { MovieYear } from './Styles/DescriptionStyles';
-import { MovieOverview } from './Styles/DescriptionStyles';
+import {
+  HeaderLogo,
+  SearchImage,
+  HeaderMovie,
+  MovieImage,
+  AboutMovie,
+  MovieTop,
+  MovieTitle,
+  MovieRating,
+  MovieGenre,
+  MovieMiddle,
+  MovieYear,
+  MovieOverview
+} from './Styles/DescriptionStyles';
 
 import '../../style.css';
 import Logo from './Logo';

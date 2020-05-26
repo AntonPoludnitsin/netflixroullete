@@ -1,12 +1,14 @@
 import React from 'react';
 
-import { MovieItem } from './Styles/FilmItemStyles';
-import { MovieImage } from './Styles/FilmItemStyles';
-import { AboutMovie } from './Styles/FilmItemStyles';
-import { Description } from './Styles/FilmItemStyles';
-import { Title } from './Styles/FilmItemStyles';
-import { ReleaseYear } from './Styles/FilmItemStyles';
-import { Genres } from './Styles/FilmItemStyles';
+import {
+  MovieItem,
+  MovieImage,
+  AboutMovie,
+  Description,
+  Genres,
+  ReleaseYear,
+  Title,
+} from './Styles/FilmItemStyles';
 
 const FilmItem = ({ title, year, genres, imageUrl }) => {
   return (
