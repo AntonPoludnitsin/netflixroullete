@@ -2,8 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 
 import FilmItem from './FilmItem';
+import EmptyContent from './EmptyContent';
 
-const FilmListContent = styled.div`
+export const FilmListContent = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
@@ -23,7 +24,11 @@ const ContentBody = ({ films }) => {
       />
     );
   });
-  return <FilmListContent>{filmsList}</FilmListContent>;
+  return films.length !== 0 ? (
+    <FilmListContent>{filmsList}</FilmListContent>
+  ) : (
+    <EmptyContent />
+  );
 };
 
 export default ContentBody;

@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 import ContentBody from './ContentBody';
-import EmptyContent from './EmptyContent';
 
 const MoviesList = styled.section`
   background-color: #232323;
@@ -12,8 +11,7 @@ const MoviesList = styled.section`
 const FilmList = ({ films }) => {
   return (
     <MoviesList>
-      {films && <ContentBody films={films} />}
-      {!films && <EmptyContent />}
+      <ContentBody films={films} />
     </MoviesList>
   );
 };

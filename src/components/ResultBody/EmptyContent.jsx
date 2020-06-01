@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const WithoutContent = styled.div`
+export const WithoutContent = styled.div`
   display: flex;
   justify-content: center;
   align-content: center;
