@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-
 import ContentBody from './ContentBody';
 
 const MoviesList = styled.section`
@@ -8,10 +7,13 @@ const MoviesList = styled.section`
   padding: 72px 60px 20px;
 `;
 
-const FilmList = ({ films }) => {
+const FilmList = ({ films, emptyValue }) => {
   return (
     <MoviesList>
-      <ContentBody films={films} />
+      <ContentBody
+        films={films}
+        emptyValue={emptyValue}
+      />
     </MoviesList>
   );
 };

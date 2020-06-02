@@ -1,8 +1,8 @@
+import React from 'react';
 import MovieDescription from './MovieDescription';
 import HeaderSearch from './HeaderSearch';
-import React from 'react';
 
-const Header = ({ films }) => (
+const Header = ({ films, changeDefaultValue }) => (
   <>
     {films.length !== 0 ? (
       <MovieDescription
@@ -13,7 +13,7 @@ const Header = ({ films }) => (
         description={films[5].overview}
       />
     ) : (
-      <HeaderSearch />
+      <HeaderSearch changeDefaultValue={changeDefaultValue} />
     )}
   </>
 );

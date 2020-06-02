@@ -16,16 +16,27 @@ export const Main = styled.main`
 
 export class App extends Component {
   state = {
-    films: data.films,
+    films: [],
     filmItemSelected: false,
+    emptyValue: "No films found"
   };
+
+  changeDefaultValue = (newText) => {
+    this.setState({emptyValue: newText})
+  }
 
   render() {
     return (
       <Main>
-        <Header films={this.state.films} />
+        <Header
+          films={this.state.films}
+          changeDefaultValue={this.changeDefaultValue}
+        />
         <Sorting films={this.state.films} />
-        <FilmList films={this.state.films} />
+        <FilmList
+          films={this.state.films}
+          emptyValue={this.state.emptyValue}
+        />
         <Footer />
       </Main>
     );

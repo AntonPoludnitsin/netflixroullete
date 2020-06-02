@@ -12,7 +12,7 @@ import ToggleButtons from '../ToggleButtons';
 import Logo from './Logo';
 import HeaderFormSearch from './HeaderFormSearch';
 
-const HeaderSearch = () => (
+const HeaderSearch = ({ changeDefaultValue }) => (
   <header className="header">
     <HeaderLogo>
       <Logo />
@@ -20,7 +20,7 @@ const HeaderSearch = () => (
     <HeaderContent>
       <h1 className="visually-hidden">Welcome to the netflixRoulette!</h1>
       <HeaderTitle>Find your movie</HeaderTitle>
-      <HeaderFormSearch />
+      <HeaderFormSearch changeDefaultValue={changeDefaultValue} />
       <HeaderToggle>
         <ToggleButtons
           title="Search by"
