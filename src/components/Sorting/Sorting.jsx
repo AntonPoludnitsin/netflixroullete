@@ -4,11 +4,11 @@ import styled from 'styled-components';
 import SortingCount from './SortingCount';
 import SortingGenre from './SortingGenre';
 
-const SectionSorting = styled.section`
+export const SectionSorting = styled.section`
   background-color: #555555;
 `;
 
-const SortingContent = styled.div`
+export const SortingContent = styled.div`
   width: 960px;
   height: 70px;
   display: flex;
@@ -20,8 +20,11 @@ const Sorting = ({ films }) => {
   return (
     <SectionSorting>
       <SortingContent>
-        {films && <SortingCount count={films.length} />}
-        {!films && <SortingGenre />}
+        {films.length !== 0 ? (
+          <SortingCount count={films.length} />
+        ) : (
+          <SortingGenre />
+        )}
       </SortingContent>
     </SectionSorting>
   );

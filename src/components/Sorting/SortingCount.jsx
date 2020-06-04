@@ -2,7 +2,7 @@ import React from 'react';
 import ToggleButtons from '../ToggleButtons';
 import styled from 'styled-components';
 
-const SortCount = styled.div`
+export const SortCount = styled.div`
   display: flex;
   align-items: center;
   color: #ffffff;
