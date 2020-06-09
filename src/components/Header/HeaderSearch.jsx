@@ -8,11 +8,11 @@ import {
 } from './Styles/HeaderStyles';
 
 import '../../style.css';
-import ToggleButtons from '../ToggleButtons';
+import ToggleSearchButtons from './ToggleSearchButtons';
 import Logo from './Logo';
 import HeaderFormSearch from './HeaderFormSearch';
 
-const HeaderSearch = ({ changeDefaultValue }) => (
+const HeaderSearch = ({ searchBy, setSearchBy }) => (
   <header className="header">
     <HeaderLogo>
       <Logo />
@@ -20,12 +20,14 @@ const HeaderSearch = ({ changeDefaultValue }) => (
     <HeaderContent>
       <h1 className="visually-hidden">Welcome to the netflixRoulette!</h1>
       <HeaderTitle>Find your movie</HeaderTitle>
-      <HeaderFormSearch changeDefaultValue={changeDefaultValue} />
+      <HeaderFormSearch />
       <HeaderToggle>
-        <ToggleButtons
+        <ToggleSearchButtons
           title="Search by"
           leftButton="title"
           rightButton="genre"
+          searchBy={searchBy}
+          setSearchBy={setSearchBy}
         />
       </HeaderToggle>
     </HeaderContent>

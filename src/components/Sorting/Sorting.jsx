@@ -16,14 +16,26 @@ export const SortingContent = styled.div`
   justify-content: space-between;
 `;
 
-const Sorting = ({ films }) => {
+const Sorting = ({
+  searchBy,
+  films,
+  genres,
+  rating,
+  sortByDate,
+  sortByRating,
+}) => {
   return (
     <SectionSorting>
       <SortingContent>
-        {films.length !== 0 ? (
-          <SortingCount count={films.length} />
+        {searchBy === 'title' ? (
+          <SortingCount
+            count={films.length}
+            rating={rating}
+            sortByDate={sortByDate}
+            sortByRating={sortByRating}
+          />
         ) : (
-          <SortingGenre />
+          <SortingGenre genres={genres} />
         )}
       </SortingContent>
     </SectionSorting>

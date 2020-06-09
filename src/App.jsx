@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
+import { connect } from 'react-redux';
 
-import Sorting from './components/Sorting/Sorting';
+import Sorting from './components/Sorting/SortingContainer';
 import FilmList from './components/ResultBody/FilmList';
 import Footer from './components/Footer';
-import data from './mockadata.json';
 import Header from './components/Header/Header';
 
 export const Main = styled.main`
@@ -14,31 +14,21 @@ export const Main = styled.main`
   box-shadow: 0 2px 34px 0 rgba(0, 0, 0, 0.27);
 `;
 
-export class App extends Component {
-  state = {
-    films: [],
-    filmItemSelected: false,
-    emptyValue: "No films found"
+const App = ({ films }) => (
+  <Main>
+    <Header films={films} />
+    <Sorting />
+    <FilmList films={films} />
+    <Footer />
+  </Main>
+);
+
+const mapStateToProps = (state) => {
+  return {
+    films: state.films,
+    searchBy: state.searchBy,
+    genres: state.genres,
+    rating: state.rating,
   };
-
-  changeDefaultValue = (newText) => {
-    this.setState({emptyValue: newText})
-  }
-
-  render() {
-    return (
-      <Main>
-        <Header
-          films={this.state.films}
-          changeDefaultValue={this.changeDefaultValue}
-        />
-        <Sorting films={this.state.films} />
-        <FilmList
-          films={this.state.films}
-          emptyValue={this.state.emptyValue}
-        />
-        <Footer />
-      </Main>
-    );
-  }
-}
+};
+export default connect(mapStateToProps, null)(App);

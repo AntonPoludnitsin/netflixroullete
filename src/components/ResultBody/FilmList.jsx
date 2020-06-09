@@ -7,12 +7,11 @@ const MoviesList = styled.section`
   padding: 72px 60px 20px;
 `;
 
-const FilmList = ({ films, emptyValue }) => {
+const FilmList = ({ films }) => {
   return (
     <MoviesList>
       <ContentBody
         films={films}
-        emptyValue={emptyValue}
       />
     </MoviesList>
   );
