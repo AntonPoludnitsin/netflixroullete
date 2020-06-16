@@ -9,6 +9,7 @@ export const MovieItem = styled.div`
 `;
 
 export const MovieImage = styled.img`
+  display: block;
   background-color: antiquewhite;
   width: 320px;
   height: 455px;

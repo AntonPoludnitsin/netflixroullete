@@ -19,7 +19,7 @@ import '../../style.css';
 import Logo from './Logo';
 import Icon from '../../images/red-icon.png';
 
-const MovieDescription = ({ image, title, genres, year, description }) => {
+const MovieDescription = ({ image, title, genres, year, description, rating }) => {
   return (
     <header className="header">
       <HeaderLogo>
@@ -33,7 +33,7 @@ const MovieDescription = ({ image, title, genres, year, description }) => {
         <AboutMovie>
           <MovieTop>
             <MovieTitle>{title}</MovieTitle>
-            <MovieRating>4.3</MovieRating>
+            <MovieRating>{rating}</MovieRating>
           </MovieTop>
           <MovieGenre>{genres}</MovieGenre>
           <MovieMiddle>

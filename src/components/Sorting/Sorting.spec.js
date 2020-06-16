@@ -3,8 +3,8 @@ import {describe, expect, it} from '@jest/globals';
 import { mount } from 'enzyme';
 import { enzymeFind } from 'styled-components/test-utils';
 
-import Sorting from './Sorting';
-import { SortingContent } from './Sorting';
+import Sorting from './SortingContainer';
+import { SortingContent } from './SortingContainer';
 import SortingCount from './SortingCount';
 import SortingGenre from './SortingGenre';
 import data from '../../mockadata';

@@ -11,6 +11,8 @@ const SortGenre = styled.div`
   line-height: 19px;
 `;
 
-const SortingGenre = () => <SortGenre>Films by Drama genre</SortGenre>;
+const SortingGenre = ({ genres }) => (
+  <SortGenre>Films by {genres} genre</SortGenre>
+);
 
 export default SortingGenre;

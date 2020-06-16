@@ -12,8 +12,8 @@ export const WithoutContent = styled.div`
   padding: 159px 0 247px;
 `;
 
-const EmptyContent = ({ title }) => {
-  return <WithoutContent data-cy="title">{title}</WithoutContent>;
-};
+const EmptyContent = () => (
+  <WithoutContent data-cy="title">No films found</WithoutContent>
+);
 
 export default EmptyContent;

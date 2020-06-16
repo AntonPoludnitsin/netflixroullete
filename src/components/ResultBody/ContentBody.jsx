@@ -12,7 +12,7 @@ export const FilmListContent = styled.div`
   justify-content: space-between;
 `;
 
-const ContentBody = ({ films, emptyValue }) => {
+const ContentBody = ({ films }) => {
   const filmsList = films.map((item) => {
     return (
       <FilmItem
@@ -27,7 +27,7 @@ const ContentBody = ({ films, emptyValue }) => {
   return films.length !== 0 ? (
     <FilmListContent>{filmsList}</FilmListContent>
   ) : (
-    <EmptyContent title={emptyValue} />
+    <EmptyContent />
   );
 };
 

@@ -1,6 +1,7 @@
 import React from 'react';
-import ToggleButtons from '../ToggleButtons';
 import styled from 'styled-components';
+
+import ToggleSortingButtons from './ToggleSortingButtons';
 
 export const SortCount = styled.div`
   display: flex;
@@ -17,14 +18,17 @@ const SortingToggle = styled.div`
   align-items: center;
 `;
 
-const SortingCount = ({ count }) => (
+const SortingCount = ({ count, rating, sortByDate, sortByRating }) => (
   <>
     <SortCount>{count} movie found</SortCount>
     <SortingToggle>
-      <ToggleButtons
-        title='Sort by'
-        leftButton='Release date'
-        rightButton='Rating'
+      <ToggleSortingButtons
+        title="Sort by"
+        leftButton="Release date"
+        rightButton="Rating"
+        rating={rating}
+        sortByDate={sortByDate}
+        sortByRating={sortByRating}
       />
     </SortingToggle>
   </>
