@@ -1,4 +1,5 @@
 import { usersAPI } from '../api/api';
+import { saveStateToLocalStorage, getLocalStorage } from './localStorage';
 
 const GET_MOVIES = 'GET-MOVIES';
 const SET_SEARCH_BY = 'SET-SEARCH-BY';
@@ -8,7 +9,7 @@ const SORT_BY_RATING = 'SORT-BY-RATING';
 const SORT_BY_DATE = 'SORT-BY-DATE';
 
 const initialState = {
-  films: [],
+  films: getLocalStorage(),
   searchBy: 'title',
   genres: '',
   rating: true,
@@ -76,16 +77,18 @@ export const sortByRating = () => ({ type: SORT_BY_RATING });
 export const getMoviesByTitle = (searchBy, value, rating) => {
   return (dispatch) => {
     usersAPI.getFilmsByTitle(searchBy, value, rating).then((data) => {
-      dispatch(getMovies(data.data.data));
+      dispatch(getMovies(data));
       dispatch(deleteGenres());
+      saveStateToLocalStorage(data);
     });
   };
 };
 export const getMoviesByGenre = (searchBy, value) => {
   return (dispatch) => {
     usersAPI.getFilmsByGenres(searchBy, value).then((data) => {
-      dispatch(getMovies(data.data.data));
+      dispatch(getMovies(data));
       dispatch(addGenres(value));
+      saveStateToLocalStorage(data)
     });
   };
 };
