@@ -10,9 +10,9 @@ import {
   Title,
 } from './Styles/FilmItemStyles';
 
-const FilmItem = ({ title, year, genres, imageUrl }) => {
+const FilmItem = ({ index, title, year, genres, imageUrl, getFilmId }) => {
   return (
-    <MovieItem>
+    <MovieItem onClick={() => getFilmId(index)}>
       <MovieImage src={imageUrl} alt="Poster of movie" />
       <AboutMovie>
         <Description>

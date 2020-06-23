@@ -33,6 +33,7 @@ module.exports = (env) => {
     mode: isProd ? "production" : isDev && "development",
     output: {
       filename: isProd ? "main-[hash:8].js" : "main.js",
+      publicPath: '/',
     },
     context: path.join(__dirname, "src"),
     devtool: isDev ? "source-map" : "",
@@ -83,6 +84,7 @@ module.exports = (env) => {
     },
     plugins: getPlugins(),
     devServer: {
+      historyApiFallback: true,
       open: true,
       port: 3000,
     },

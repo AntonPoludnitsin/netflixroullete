@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import {
   HeaderLogo,
@@ -19,14 +20,21 @@ import '../../style.css';
 import Logo from './Logo';
 import Icon from '../../images/red-icon.png';
 
-const MovieDescription = ({ image, title, genres, year, description, rating }) => {
+const MovieDescription = ({
+  image,
+  title,
+  genres,
+  year,
+  description,
+  rating,
+}) => {
   return (
     <header className="header">
       <HeaderLogo>
         <Logo />
-        <a href="">
+        <Link to="/search">
           <SearchImage src={Icon} alt="search link" />
-        </a>
+        </Link>
       </HeaderLogo>
       <HeaderMovie>
         <MovieImage src={image} alt="poster of movie" />

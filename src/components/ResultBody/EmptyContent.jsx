@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { MoviesList } from './FilmList'
 
 export const WithoutContent = styled.div`
   display: flex;
@@ -12,8 +13,10 @@ export const WithoutContent = styled.div`
   padding: 159px 0 247px;
 `;
 
-const EmptyContent = () => (
-  <WithoutContent data-cy="title">No films found</WithoutContent>
+const EmptyContent = ({title}) => (
+  <MoviesList>
+    <WithoutContent data-cy="title">{title}</WithoutContent>
+  </MoviesList>
 );
 
 export default EmptyContent;
