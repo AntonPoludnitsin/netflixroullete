@@ -3,6 +3,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
 	mode: 'development',
+	output: {
+		publicPath: '/',
+	},
 	context: path.join(__dirname, 'src'),
 	devtool: "source-map",
 	entry: './index.js',
@@ -43,6 +46,7 @@ module.exports = {
 		})
 	],
 	devServer: {
+		historyApiFallback: true,
 		open: true,
 		port: 3000
 	}

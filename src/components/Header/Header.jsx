@@ -1,22 +1,16 @@
 import React from 'react';
 
 import MovieDescription from './MovieDescription';
-import HeaderSearchContainer from './HeaderSearchContainer';
 
-const Header = ({ films }) => (
-  <>
-    {/*
-      <MovieDescription
-        image={films[2].poster_path}
-        title={films[2].title}
-        genres={films[2].genres.join(', ')}
-        year={films[2].release_date.slice(0, 4)}
-        description={films[2].overview}
-        rating={films[2].vote_average}
-      />
-      */}
-    <HeaderSearchContainer />
-  </>
+const Header = ({ films, filmIdx }) => (
+  <MovieDescription
+    image={films[filmIdx].poster_path}
+    title={films[filmIdx].title}
+    genres={films[filmIdx].genres.join(', ')}
+    year={films[filmIdx].release_date.slice(0, 4)}
+    description={films[filmIdx].overview}
+    rating={films[filmIdx].vote_average}
+  />
 );
 
 export default Header;

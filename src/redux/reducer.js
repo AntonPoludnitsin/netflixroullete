@@ -79,7 +79,7 @@ export const getMoviesByTitle = (searchBy, value, rating) => {
     usersAPI.getFilmsByTitle(searchBy, value, rating).then((data) => {
       dispatch(getMovies(data));
       dispatch(deleteGenres());
-      saveStateToLocalStorage(data);
+      // saveStateToLocalStorage(data);
     });
   };
 };
@@ -88,7 +88,7 @@ export const getMoviesByGenre = (searchBy, value) => {
     usersAPI.getFilmsByGenres(searchBy, value).then((data) => {
       dispatch(getMovies(data));
       dispatch(addGenres(value));
-      saveStateToLocalStorage(data)
+      // saveStateToLocalStorage(data);
     });
   };
 };

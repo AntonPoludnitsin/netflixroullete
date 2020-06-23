@@ -52,6 +52,7 @@ export const MovieRating = styled.div`
   align-items: center;
   border: 1px solid #ffffff;
   border-radius: 50%;
+  flex-shrink: 0;
 `;
 export const MovieGenre = styled.div`
   opacity: 0.7;

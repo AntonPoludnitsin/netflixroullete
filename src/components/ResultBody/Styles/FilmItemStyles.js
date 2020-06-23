@@ -6,6 +6,7 @@ export const MovieItem = styled.div`
   font-weight: 500;
   letter-spacing: 0;
   margin-bottom: 50px;
+  cursor: pointer;
 `;
 
 export const MovieImage = styled.img`
